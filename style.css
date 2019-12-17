@@ -241,14 +241,14 @@ aside p {
     cursor: pointer;
 }
 .game-card1-picture {
-    background-image: url("/img/x-men.jpg");
+    background-image: url("img/x-men.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 1em;
 }
 .game-card2-picture {
-    background-image: url("/img/superman.png");
+    background-image: url("img/superman.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
