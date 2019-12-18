@@ -1,27 +1,57 @@
-document.addEventListener("DOMContentLoaded", function (event) {
-  document.querySelector('.custom-select-wrapper').addEventListener('click', function () {
-    this.querySelector('.custom-select').classList.toggle('open');
-  })
+document.addEventListener("DOMContentLoaded", function(event) {
+  for (
+    var i = 0;
+    i < document.getElementsByClassName("game-card").length;
+    i++
+  ) {
+    document
+      .getElementsByClassName("game-card")
+      [i].addEventListener("click", function() {
+        if (this.getAttribute("already_pressed") != "true") {
+          for (
+            var p = 0;
+            p < document.getElementsByClassName("game-card").length;
+            p++
+          ) {
+            document
+              .getElementsByClassName("game-card")
+              [p].setAttribute("already_pressed", "true");
+          }
+          showResult(this);
+        }
+      });
+  }
 
-  window.addEventListener('click', function (e) {
-    const select = document.querySelector('.custom-select')
+  document.querySelector(".custom-select-wrapper") &&
+    document
+      .querySelector(".custom-select-wrapper")
+      .addEventListener("click", function() {
+        this.querySelector(".custom-select").classList.toggle("open");
+      });
+
+  window.addEventListener("click", function(e) {
+    const select = document.querySelector(".custom-select");
     if (!select.contains(e.target)) {
-      select.classList.remove('open');
+      select.classList.remove("open");
     }
   });
 
   for (const option of document.querySelectorAll(".custom-option")) {
-    option.addEventListener('click', function () {
-      if (!this.classList.contains('selected')) {
-        this.parentNode.querySelector('.custom-option.selected').classList.remove('selected');
-        this.classList.add('selected');
-        this.closest('.custom-select').querySelector('.custom-select__trigger span').textContent = this.textContent;
+    option.addEventListener("click", function() {
+      if (!this.classList.contains("selected")) {
+        this.parentNode
+          .querySelector(".custom-option.selected")
+          .classList.remove("selected");
+        this.classList.add("selected");
+        this.closest(".custom-select").querySelector(
+          ".custom-select__trigger span"
+        ).textContent = this.textContent;
       }
-    })
+    });
   }
 });
 
-function myFunction() {
+function OpenMenu() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
     x.className += " responsive";
@@ -30,67 +60,38 @@ function myFunction() {
   }
 }
 
-// showCounter(document.querySelector('.game-card2-nopicture h3'), 0, 60)
 function showCounter(querySelector, currentValue, maxValue) {
-  querySelector.innerHTML = currentValue;
+  querySelector.innerHTML = currentValue + "%";
 
   currentValue++;
   if (currentValue <= maxValue) {
-    timeout = currentValue * 0.8;
-    setTimeout(function () {
+    timeout =
+      2000 / maxValue + ((currentValue / maxValue) * 15 * maxValue) / 100;
+
+    setTimeout(function() {
       showCounter(querySelector, currentValue, maxValue);
     }, timeout);
   }
 }
 
-// show counter
-function addClassCard1() {
-  var v = document.getElementById("active-h2");
-  v.classList.toggle("active-h2");
+function showResult(gameCardElement) {
+  resultElements = document.querySelectorAll("[result]");
+  for (let i = 0; i < resultElements.length; i++) {
+    showCounter(resultElements[i], 0, resultElements[i].getAttribute("result"));
+  }
 
-  var v = document.getElementById("active-h4");
-  v.classList.toggle("active-h4");
+  var elements = document.getElementsByClassName("result");
+  for (let index = 0; index < elements.length; index++) {
+    elements[index].classList.toggle("result-active");
+  }
 
-  var v = document.getElementById("active2-h2");
-  v.classList.toggle("active-h2");
+  var elements = document.getElementsByClassName("card-name");
+  for (let index = 0; index < elements.length; index++) {
+    elements[index].classList.toggle("slide-name");
+  }
 
-  var v = document.getElementById("active2-h4");
-  v.classList.toggle("active-h4");
-
-  var v = document.getElementById("active-count1");
-  v.classList.toggle("active-count");
-
-  var v = document.getElementById("active-count2");
-  v.classList.toggle("active-count");
-
-  var v = document.getElementById("active-h3");
-  v.classList.toggle("active-card-h3");
-
-  var v = document.getElementById("active2-h3");
-  v.classList.toggle("active-card-h3");
-}
-
-function addClassCard2() {
-  var v = document.getElementById("active-h2");
-  v.classList.toggle("active-h2");
-
-  var v = document.getElementById("active-h4");
-  v.classList.toggle("active-h4");
-  var v = document.getElementById("active2-h2");
-  v.classList.toggle("active-h2");
-
-  var v = document.getElementById("active2-h4");
-  v.classList.toggle("active-h4");
-
-  var v = document.getElementById("active-count1");
-  v.classList.toggle("active-count");
-
-  var v = document.getElementById("active-count2");
-  v.classList.toggle("active-count");
-
-  var v = document.getElementById("active-h3");
-  v.classList.toggle("active-card-h3");
-
-  var v = document.getElementById("active2-h3");
-  v.classList.toggle("active-card-h3");
+  var elements = document.getElementsByClassName("count-background");
+  for (let index = 0; index < elements.length; index++) {
+    elements[index].classList.toggle("slide-background");
+  }
 }
