@@ -62,6 +62,12 @@ function addClassCard1() {
 
   var v = document.getElementById("active-count2");
   v.classList.toggle("active-count");
+
+  var v = document.getElementById("active-h3");
+  v.classList.toggle("active-card-h3");
+
+  var v = document.getElementById("active2-h3");
+  v.classList.toggle("active-card-h3");
 }
 
 function addClassCard2() {
@@ -81,4 +87,10 @@ function addClassCard2() {
 
   var v = document.getElementById("active-count2");
   v.classList.toggle("active-count");
+
+  var v = document.getElementById("active-h3");
+  v.classList.toggle("active-card-h3");
+
+  var v = document.getElementById("active2-h3");
+  v.classList.toggle("active-card-h3");
 }
