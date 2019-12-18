@@ -227,7 +227,8 @@ aside p {
 }
 
 /* THE GAME PAGE */
-.card-name {
+.card-name,
+.card-name2 {
   position: absolute;
 }
 
@@ -246,6 +247,10 @@ aside p {
 
 .slide-name {
   animation: slide-name 0.7s forwards ease-out;
+}
+
+.slide-name2 {
+  animation: slide-name2 0.4s forwards ease-out;
 }
 
 .slide-background {
@@ -273,6 +278,13 @@ aside p {
 @keyframes slide-name {
   100% {
     transform: translate(0, 2.7em);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-name2 {
+  100% {
+    transform: translate(0, -1em);
     opacity: 1;
   }
 }
