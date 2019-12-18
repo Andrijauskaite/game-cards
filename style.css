@@ -185,7 +185,7 @@ aside p {
 .game-container {
     width: 80%;
     margin: 0 auto;
-    padding-top: 2.2em;
+    padding-top: 1.2em;
 }
 .game-question {
     text-align: center;
@@ -517,7 +517,6 @@ aside p {
 .field {
     display: flex;
     flex-flow: column-reverse;
-    margin-bottom: 1em;
 }
 label, input {
     transition: all 0.2s;
@@ -660,6 +659,7 @@ input:focus + label {
 }
 .thank-you-container figure {
     text-align: center;
+    margin: 0;
 }
 .back-to-game-button {
     display: inline-block;
@@ -706,8 +706,9 @@ footer p {
     }
     .firstanswer-container button,
     .secondanswer-container button {
-        width: 48%;
+        width: 100%;
         margin: 0 auto;
+        margin-top: 1em;
     }
     .submit-container {
         flex-direction: column;
@@ -741,7 +742,12 @@ footer p {
     .game-card2-picture {
         height: 10.5em;
     }
-
+    .thank-you-container h2 {
+        font-size: 2rem;
+    }
+    .thank-you-container figure img {
+        width: 14em;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -842,7 +848,7 @@ footer p {
     }
     .form-container,
     .contact-container {
-        width: 37.5em;
+        width: 30.5em;
         padding-top: 3em;
     }
     .form-container h1,
@@ -865,6 +871,12 @@ footer p {
     .back-to-game-button {
         margin-top: 3em;
     }
+    .game-container {
+        padding-top: 2.2em;
+    }
+    .game-selector {
+        margin-bottom: 4em;
+    }
 }
 
 @media screen and (min-width: 1025px) {
@@ -877,9 +889,6 @@ footer p {
     .next-previous-buttons {
         width: 23em;
         margin: 0 auto;
-    }
-    .game-selector {
-        margin-bottom: 4em;
     }
     .more-questions-button {
         width: 12.5em;
