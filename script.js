@@ -90,6 +90,11 @@ function showResult(gameCardElement) {
     elements[index].classList.toggle("slide-name");
   }
 
+  var elements = document.getElementsByClassName("card-name2");
+  for (let index = 0; index < elements.length; index++) {
+    elements[index].classList.toggle("slide-name2");
+  }
+  
   var elements = document.getElementsByClassName("count-background");
   for (let index = 0; index < elements.length; index++) {
     elements[index].classList.toggle("slide-background");
