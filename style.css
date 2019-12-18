@@ -82,7 +82,7 @@ nav a:not(:first-child) {
 .one,
 .two,
 .three {
-    background: black;
+    background: rgb(85, 85, 85);
     width: 20px;
     height: 3px;
     margin: 4px 0;
@@ -486,7 +486,7 @@ aside p {
     justify-content: space-between;
     padding: 0 16px;
     font-size: .9rem;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
     color: #3b3b3b;
     height: 40px;
@@ -537,7 +537,7 @@ aside p {
     display: block;
     padding: 0 22px 0 22px;
     font-size: .9rem;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
     color: #3b3b3b;
     line-height: 40px;
@@ -577,13 +577,13 @@ aside p {
 .arrow::before {
     left: -4px;
     transform: rotate(45deg);
-    background-color: #3c3a3a;
+    background-color: rgb(85, 85, 85);
 }
 
 .arrow::after {
     left: 3px;
     transform: rotate(-45deg);
-    background-color: #3c3a3a;
+    background-color: rgb(85, 85, 85);
 }
 
 .open .arrow::before {
