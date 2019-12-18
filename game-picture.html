@@ -1,233 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <script src="script.js"></script>
-    <title>Would You Rathert</title>
-  </head>
 
-  <body>
-    <main>
-      <!-- Our header begins -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="script.js"></script>
+  <title>Would You Rathert</title>
+</head>
 
-      <header>
-        <nav class="topnav" id="myTopnav">
-          <a href="index.html" class="logo" ontouchstart="return true;"
-            >Would-you-rather.com</a
-          >
-          <a href="ask-question.html">Ask Questions</a>
-          <a href="contact.html">Contact</a>
-          <a href="javascript:void(0);" class="icon" onclick="OpenMenu()">
-            <div class="hamburger">
-              <div class="one"></div>
-              <div class="two"></div>
-              <div class="three"></div>
-            </div>
-          </a>
-        </nav>
-      </header>
+<body>
+  <main>
+    <!-- Our header begins -->
 
-      <!-- Game container -->
-
-      <div class="game-container">
-        <div class="game-selector">
-          <div class="custom-select-wrapper">
-            <div class="custom-select">
-              <div class="custom-select__trigger">
-                <h5>Sort by:</h5>
-                <span>Newest</span>
-                <div class="arrow"></div>
-              </div>
-              <div class="custom-options">
-                <span class="custom-option selected" data-value="tesla"
-                  >Newest</span
-                >
-                <span class="custom-option" data-value="volvo"
-                  >Most Discussed</span
-                >
-                <span class="custom-option" data-value="mercedes"
-                  >Active Recently</span
-                >
-                <span class="custom-option" data-value="mercedes"
-                  >Most Voted</span
-                >
-              </div>
-            </div>
+    <header>
+      <nav class="topnav" id="myTopnav">
+        <a href="index.html" class="logo" ontouchstart="return true;">Would-you-rather.com</a>
+        <a href="ask-question.html">Ask Questions</a>
+        <a href="contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="OpenMenu()">
+          <div class="hamburger">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
           </div>
-        </div>
-        <!-- Ends game selector -->
-
-        <div class="game-question">
-          <h1>Would-you-rather be?</h1>
-        </div>
-
-        <div class="game-cards">
-          <div class="game-card game-card1-picture" onclick="addClassCard1()">
-            <div class="count-background"></div>
-            <h2 result="20" class="result in-front slide-percents">0</h2>
-            <h4 class="result in-front show-votes">1.900 votes</h4>
-            <h3>X-Men</h3>
-          </div>
-          <div class="game-card game-card2-picture" onclick="addClassCard2()">
-            <div class="count-background"></div>
-            <h2 result="80" class="result in-front slide-percents">0</h2>
-            <h4 class="result in-front show-votes">3.500 votes</h4>
-            <h3>Superman</h3>
-          </div>
-          <div class="or-meaning">
-            <h4>Or</h4>
-          </div>
-        </div>
-        <!-- Ends game cards -->
-
-        <div class="next-previous-buttons">
-          <a href="game.html" class="previous-button">Previous</a>
-          <a href="" class="next-button">Next</a>
-        </div>
-        <!-- Ends previous-next buttons -->
-
-        <a href="index.html">
-          <div class="more-questions-button">More Questions</div>
         </a>
+      </nav>
+    </header>
 
-        <!-- Comments container just for example -->
+    <!-- Game container -->
 
+    <div class="game-container">
+      <div class="game-selector">
+        <div class="custom-select-wrapper">
+          <div class="custom-select">
+            <div class="custom-select__trigger">
+              <h5>Sort by:</h5>
+              <span>Newest</span>
+              <div class="arrow"></div>
+            </div>
+            <div class="custom-options">
+              <span class="custom-option selected" data-value="tesla">Newest</span>
+              <span class="custom-option" data-value="volvo">Most Discussed</span>
+              <span class="custom-option" data-value="mercedes">Active Recently</span>
+              <span class="custom-option" data-value="mercedes">Most Voted</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Ends game selector -->
+
+      <div class="game-question">
+        <h1>Would-you-rather be?</h1>
+      </div>
+
+      <div class="game-cards">
+        <div class="game-card game-card1-picture">
+          <div class="count-background"></div>
+          <h2 result="20" class="result in-front slide-percents">0</h2>
+          <h4 class="result in-front show-votes">1.900 votes</h4>
+          <h3 class="card-name2">X-Men</h3>
+        </div>
+        <div class="game-card game-card2-picture">
+          <div class="count-background"></div>
+          <h2 result="80" class="result in-front slide-percents">0</h2>
+          <h4 class="result in-front show-votes">3.500 votes</h4>
+          <h3 class="card-name2">Superman</h3>
+        </div>
+        <div class="or-meaning">
+          <h4>Or</h4>
+        </div>
+      </div>
+      <!-- Ends game cards -->
+
+      <div class="next-previous-buttons">
+        <a href="game.html" class="previous-button">Previous</a>
+        <a href="" class="next-button">Next</a>
+      </div>
+      <!-- Ends previous-next buttons -->
+
+      <a href="index.html">
+        <div class="more-questions-button">More Questions</div>
+      </a>
+
+      <!-- Comments container just for example -->
+
+      <div class="comments-container">
+        <h3>15 comments</h3>
+        <div class="line"></div>
         <div class="comments-container">
-          <h3>15 comments</h3>
-          <div class="line"></div>
-          <div class="comments-container">
-            <div class="add-comment">
-              <img src="img/person1.jpeg" alt="" />
+          <div class="add-comment">
+            <img src="img/person1.jpeg" alt="" />
+            <div class="comment-text">
+              <h4>Add comment</h4>
+            </div>
+          </div>
+          <div class="comment">
+            <img src="img/person2.jpeg" alt="" />
+            <div class="text-container">
               <div class="comment-text">
-                <h4>Add comment</h4>
+                <h4>
+                  <span>Tod Mortin </span>Lorem ipsum dolor sit amet,
+                  consetetur sadipscing elitr forumun deren
+                </h4>
               </div>
-            </div>
-            <div class="comment">
-              <img src="img/person2.jpeg" alt="" />
-              <div class="text-container">
-                <div class="comment-text">
-                  <h4>
-                    <span>Tod Mortin </span>Lorem ipsum dolor sit amet,
-                    consetetur sadipscing elitr forumun deren
-                  </h4>
-                </div>
-                <div class="like-reply">
-                  <h4>Like</h4>
-                  <h4>Reply</h4>
-                </div>
-              </div>
-            </div>
-            <div class="comment">
-              <img src="img/person3.jpeg" alt="" />
-              <div class="text-container">
-                <div class="comment-text">
-                  <h4>
-                    <span>Mari Martienini </span>Lorem ipsum dolor sit amet,
-                    consetetur sadipscing elitr forumun deren
-                  </h4>
-                </div>
-                <div class="like-reply">
-                  <h4>Like</h4>
-                  <h4>Reply</h4>
-                </div>
-              </div>
-            </div>
-            <div class="comment">
-              <img src="img/person4.jpeg" alt="" />
-              <div class="text-container">
-                <div class="comment-text">
-                  <h4>
-                    <span>Svens Kiluor </span>Lorem ipsum dolor sit amet,
-                    consetetur sadipscing elitr forumun deren
-                  </h4>
-                </div>
-                <div class="like-reply">
-                  <h4>Like</h4>
-                  <h4>Reply</h4>
-                </div>
-              </div>
-            </div>
-            <div class="comment">
-              <img src="img/person5.jpeg" alt="" />
-              <div class="text-container">
-                <div class="comment-text">
-                  <h4>
-                    <span>Rick Morti </span>Lorem ipsum dolor sit amet,
-                    consetetur sadipscing elitr forumun deren
-                  </h4>
-                </div>
-                <div class="like-reply">
-                  <h4>Like</h4>
-                  <h4>Reply</h4>
-                </div>
+              <div class="like-reply">
+                <h4>Like</h4>
+                <h4>Reply</h4>
               </div>
             </div>
           </div>
-          <button>Load 5 more comments</button>
+          <div class="comment">
+            <img src="img/person3.jpeg" alt="" />
+            <div class="text-container">
+              <div class="comment-text">
+                <h4>
+                  <span>Mari Martienini </span>Lorem ipsum dolor sit amet,
+                  consetetur sadipscing elitr forumun deren
+                </h4>
+              </div>
+              <div class="like-reply">
+                <h4>Like</h4>
+                <h4>Reply</h4>
+              </div>
+            </div>
+          </div>
+          <div class="comment">
+            <img src="img/person4.jpeg" alt="" />
+            <div class="text-container">
+              <div class="comment-text">
+                <h4>
+                  <span>Svens Kiluor </span>Lorem ipsum dolor sit amet,
+                  consetetur sadipscing elitr forumun deren
+                </h4>
+              </div>
+              <div class="like-reply">
+                <h4>Like</h4>
+                <h4>Reply</h4>
+              </div>
+            </div>
+          </div>
+          <div class="comment">
+            <img src="img/person5.jpeg" alt="" />
+            <div class="text-container">
+              <div class="comment-text">
+                <h4>
+                  <span>Rick Morti </span>Lorem ipsum dolor sit amet,
+                  consetetur sadipscing elitr forumun deren
+                </h4>
+              </div>
+              <div class="like-reply">
+                <h4>Like</h4>
+                <h4>Reply</h4>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- Ends comments-container -->
+        <button>Load 5 more comments</button>
       </div>
-      <!-- Ends Game container -->
+      <!-- Ends comments-container -->
+    </div>
+    <!-- Ends Game container -->
 
-      <!-- Info about the game -->
+    <!-- Info about the game -->
 
-      <div class="info blue1">
-        <aside>
-          <h1>Lorem ipsum</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero
-          </p>
-        </aside>
-      </div>
+    <div class="info blue1">
+      <aside>
+        <h1>Lorem ipsum</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+          erat, sed diam voluptua. At vero
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+          erat, sed diam voluptua. At vero
+        </p>
+      </aside>
+    </div>
 
-      <div class="info blue2">
-        <aside>
-          <h1>Lorem ipsum</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero
-          </p>
-        </aside>
-      </div>
+    <div class="info blue2">
+      <aside>
+        <h1>Lorem ipsum</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+          erat, sed diam voluptua. At vero
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+          erat, sed diam voluptua. At vero
+        </p>
+      </aside>
+    </div>
 
-      <div class="info blue3">
-        <aside>
-          <h1>Lorem ipsum</h1>
-          <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero
-          </p>
-        </aside>
-      </div>
+    <div class="info blue3">
+      <aside>
+        <h1>Lorem ipsum</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+          erat, sed diam voluptua. At vero
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+          erat, sed diam voluptua. At vero
+        </p>
+      </aside>
+    </div>
 
-      <!-- Footer -->
+    <!-- Footer -->
 
-      <footer>
-        <h3>Private policy</h3>
-        <p>© Copyright 2019 Would-you-rather.com</p>
-      </footer>
-    </main>
-  </body>
+    <footer>
+      <h3>Private policy</h3>
+      <p>© Copyright 2019 Would-you-rather.com</p>
+    </footer>
+  </main>
+</body>
+
 </html>
