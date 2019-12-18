@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,10 @@
     <script src="script.js"></script>
     <title>Would You Rathert</title>
 </head>
+
 <body>
     <main>
-        
+
         <!-- Our header begins -->
 
         <header>
@@ -35,7 +37,8 @@
             <div class="game-selector">
                 <div class="custom-select-wrapper">
                     <div class="custom-select">
-                        <div class="custom-select__trigger"><span>Newest</span>
+                        <div class="custom-select__trigger">
+                            <h5>Sort by:</h5><span>Newest</span>
                             <div class="arrow"></div>
                         </div>
                         <div class="custom-options">
@@ -43,29 +46,45 @@
                             <span class="custom-option" data-value="volvo">Most Discussed</span>
                             <span class="custom-option" data-value="mercedes">Active Recently</span>
                             <span class="custom-option" data-value="mercedes">Most Voted</span>
-                        </div>    
+                        </div>
                     </div>
-                </div>  
-            </div> <!-- Ends game-selector -->
+                </div>
+            </div> <!-- Ends game selector -->
 
 
-            <div class="game-question"><h1>Would-you-rather buy?</h1></div>
+            <div class="game-question">
+                <h1>Would-you-rather be?</h1>
+            </div>
 
 
             <div class="game-cards">
-                <div class="game-card1-nopicture"><h3>PlayStation</h3></div>
-                <div class="game-card2-nopicture"><h3>Xbox</h3></div>
-                <div class="or-meaning"><h4>Or</h4></div>
-            </div> <!-- Ends game-cards -->
+                <div class="game-card1-picture" onclick="addClassCard1()">
+                    <div class="count-background" id="active-count1"></div>
+                    <h2 id="active-h2">20<span>%</span></h2>
+                    <h4 id="active-h4">1.900 votes</h4>
+                    <h3>X-Men</h3>
+                </div>
+                <div class="game-card2-picture" onclick="addClassCard2()">
+                    <div class="count-background" id="active-count2"></div>
+                    <h2 id="active2-h2">80<span>%</span></h2>
+                    <h4 id="active2-h4">3.500 votes</h4>
+                    <h3>Superman</h3>
+                </div>
+                <div class="or-meaning">
+                    <h4>Or</h4>
+                </div>
+            </div> <!-- Ends game cards -->
 
 
             <div class="next-previous-buttons">
-                <a href="" class="previous-button previous-notactive">Previous</a>
-                <a href="game-picture.html" class="next-button">Next</a>
-            </div> <!-- Ends previous-next-buttons -->
+                <a href="game.html" class="previous-button">Previous</a>
+                <a href="" class="next-button">Next</a>
+            </div> <!-- Ends previous-next buttons -->
 
-            
-            <a href="index.html"><div class="more-questions-button">More Questions</div></a>
+
+            <a href="index.html">
+                <div class="more-questions-button">More Questions</div>
+            </a>
 
 
             <!-- Comments container just for example -->
@@ -76,66 +95,98 @@
                 <div class="comments-container">
                     <div class="add-comment">
                         <img src="img/person1.jpeg" alt="">
-                        <div class="comment-text"><h4>Add comment</h4></div>
+                        <div class="comment-text">
+                            <h4>Add comment</h4>
+                        </div>
                     </div>
                     <div class="comment">
                         <img src="img/person2.jpeg" alt="">
                         <div class="text-container">
-                            <div class="comment-text"><h4><span>Tod Mortin </span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr forumun deren</h4></div>
-                            <div class="like-reply"><h4>Like</h4><h4>Reply</h4></div>
+                            <div class="comment-text">
+                                <h4><span>Tod Mortin </span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+                                    forumun deren</h4>
+                            </div>
+                            <div class="like-reply">
+                                <h4>Like</h4>
+                                <h4>Reply</h4>
+                            </div>
                         </div>
                     </div>
                     <div class="comment">
                         <img src="img/person3.jpeg" alt="">
                         <div class="text-container">
-                            <div class="comment-text"><h4><span>Mari Martienini </span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr forumun deren</h4></div>
-                            <div class="like-reply"><h4>Like</h4><h4>Reply</h4></div>
+                            <div class="comment-text">
+                                <h4><span>Mari Martienini </span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+                                    forumun deren</h4>
+                            </div>
+                            <div class="like-reply">
+                                <h4>Like</h4>
+                                <h4>Reply</h4>
+                            </div>
                         </div>
                     </div>
                     <div class="comment">
                         <img src="img/person4.jpeg" alt="">
                         <div class="text-container">
-                            <div class="comment-text"><h4><span>Svens Kiluor </span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr forumun deren</h4></div>
-                            <div class="like-reply"><h4>Like</h4><h4>Reply</h4></div>
+                            <div class="comment-text">
+                                <h4><span>Svens Kiluor </span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+                                    forumun deren</h4>
+                            </div>
+                            <div class="like-reply">
+                                <h4>Like</h4>
+                                <h4>Reply</h4>
+                            </div>
                         </div>
                     </div>
                     <div class="comment">
                         <img src="img/person5.jpeg" alt="">
                         <div class="text-container">
-                            <div class="comment-text"><h4><span>Rick Morti </span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr forumun deren</h4></div>
-                            <div class="like-reply"><h4>Like</h4><h4>Reply</h4></div>
+                            <div class="comment-text">
+                                <h4><span>Rick Morti </span>Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+                                    forumun deren</h4>
+                            </div>
+                            <div class="like-reply">
+                                <h4>Like</h4>
+                                <h4>Reply</h4>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <button>Load 5 more comments</button>
             </div> <!-- Ends comments-container -->
 
-        </div> <!-- Ends game-container -->
-        
+        </div> <!-- Ends Game container -->
+
 
         <!-- Info about the game -->
 
         <div class="info blue1">
             <aside>
                 <h1>Lorem ipsum</h1>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero</p>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero</p>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero</p>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero</p>
             </aside>
         </div>
 
         <div class="info blue2">
             <aside>
                 <h1>Lorem ipsum</h1>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero</p>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero</p>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero</p>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero</p>
             </aside>
         </div>
 
         <div class="info blue3">
             <aside>
                 <h1>Lorem ipsum</h1>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero</p>
-                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero</p>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero</p>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                    labore et dolore magna aliquyam erat, sed diam voluptua. At vero</p>
             </aside>
         </div>
 
@@ -149,4 +200,5 @@
     </main>
 
 </body>
+
 </html>
