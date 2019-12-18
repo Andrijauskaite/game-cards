@@ -3,6 +3,9 @@
 
 * {
     box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    /* For some Androids */
 }
 
 *:focus {
@@ -52,6 +55,10 @@ nav a:not(:first-child) {
     font-weight: 700;
 }
 
+.logo:active {
+    -webkit-transform: scale3d(0.9, 0.9, 1);
+}
+
 .topnav {
     overflow: hidden;
     background-color: white;
@@ -90,7 +97,7 @@ nav a:not(:first-child) {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    padding-top: .5em;
+    padding-top: 1.5em;
     padding-bottom: 5em;
 }
 
@@ -118,6 +125,10 @@ nav a:not(:first-child) {
     box-shadow: inset 0 0 20px rgba(206, 28, 28, 0);
     text-shadow: none;
     transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.category-buttons a:active {
+    -webkit-transform: scale3d(0.9, 0.9, 1);
 }
 
 .category-buttons a:hover {
@@ -181,6 +192,10 @@ aside p {
 .info aside p:nth-child(2) {
     margin-top: 1em;
     margin-bottom: 1em;
+}
+
+.intro {
+    padding-top: 1em;
 }
 
 .intro aside p {
@@ -562,13 +577,13 @@ aside p {
 .arrow::before {
     left: -4px;
     transform: rotate(45deg);
-    background-color: black;
+    background-color: #3c3a3a;
 }
 
 .arrow::after {
     left: 3px;
     transform: rotate(-45deg);
-    background-color: black;
+    background-color: #3c3a3a;
 }
 
 .open .arrow::before {
@@ -921,16 +936,16 @@ footer p {
 
     .submit-container input {
         width: 100%;
+        font-weight: 700;
+        letter-spacing: .4px;
+        font-size: 1.333rem;
+        padding: .7em;
     }
 
 }
 
 @media screen and (max-width: 400px) {
     /*iki 400px */
-
-    .category-buttons a {
-        font-size: 1.433rem;
-    }
 
     .more-questions-button {
         font-size: 1.433rem;
@@ -1001,6 +1016,10 @@ footer p {
         float: none;
         display: block;
         color: white;
+    }
+
+    .category-buttons a {
+        font-size: 1.433rem;
     }
 
 }
@@ -1098,8 +1117,21 @@ footer p {
 @media screen and (min-width: 48em) {
 
     /*nuo 768px */
+
+    .intro {
+        padding-top: 2em;
+    }
+
     aside p {
         font-size: 1.167rem;
+    }
+
+    .category-buttons {
+        padding-top: 2.5em;
+    }
+
+    .category-buttons h1 {
+        font-size: 2rem;
     }
 
     .thank-you-container figure img {
