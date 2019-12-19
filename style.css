@@ -979,8 +979,8 @@ footer p {
   font-size: 0.9rem;
 }
 
-@media screen and (max-width: 360px) {
-  /*iki 360px */
+@media screen and (max-width: 350px) {
+  /*iki 350px */
 
   .firstanswer-container,
   .secondanswer-container {
@@ -1039,6 +1039,13 @@ footer p {
   .thank-you-container figure img {
     width: 14em;
   }
+
+  .firstanswer-container button,
+  .secondanswer-container button {
+    font-size: .9rem;
+    padding: 0.75em;
+  }
+
 }
 
 @media screen and (max-width: 700px) {
