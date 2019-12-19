@@ -263,13 +263,6 @@ aside p {
   opacity: 0;
 }
 
-@-webkit-keyframes slide {
-  100% {
-    transform: translate(0, 0);
-    opacity: 1;
-  }
-}
-
 @keyframes slide {
   100% {
     transform: translate(0, 0);
@@ -1066,6 +1059,17 @@ footer p {
 
   .topnav.responsive {
     background: #0c1d8a;
+    opacity: 0;
+    transform: translate(0, -9rem);
+    animation: slide-in-menu 0.5s forwards ease-out;
+    animation-delay: 0.1s;
+  }
+
+  @keyframes slide-in-menu {
+    100% {
+      transform: translate(0, 0);
+      opacity: 1;
+    }
   }
 
   .topnav.responsive .icon {
