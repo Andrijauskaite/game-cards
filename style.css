@@ -57,6 +57,7 @@ nav a:not(:first-child) {
 
 .logo:active {
   -webkit-transform: scale3d(0.9, 0.9, 1);
+  transform: scale3d(0.9, 0.9, 1);
 }
 
 .topnav {
@@ -129,6 +130,7 @@ nav a:not(:first-child) {
 
 .category-buttons a:active {
   -webkit-transform: scale3d(0.9, 0.9, 1);
+  transform: scale3d(0.9, 0.9, 1);
 }
 
 .category-buttons a:hover {
