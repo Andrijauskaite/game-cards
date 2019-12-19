@@ -22,6 +22,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
     });
   }
 
+  document.querySelector('a .hamburger') &&
+    document.querySelector('a .hamburger').parentNode.addEventListener("click", OpenMenu);
+
   document.querySelector(".custom-select-wrapper") &&
     document
       .querySelector(".custom-select-wrapper")
