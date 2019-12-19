@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function(event) {
+document.addEventListener("DOMContentLoaded", function (event) {
   for (
     var i = 0;
     i < document.getElementsByClassName("game-card").length;
@@ -6,38 +6,39 @@ document.addEventListener("DOMContentLoaded", function(event) {
   ) {
     document
       .getElementsByClassName("game-card")
-      [i].addEventListener("click", function() {
-        if (this.getAttribute("already_pressed") != "true") {
-          for (
-            var p = 0;
-            p < document.getElementsByClassName("game-card").length;
-            p++
-          ) {
-            document
-              .getElementsByClassName("game-card")
-              [p].setAttribute("already_pressed", "true");
-          }
-          showResult(this);
+    [i].addEventListener("click", function () {
+      if (this.getAttribute("already_pressed") != "true") {
+        for (
+          var p = 0;
+          p < document.getElementsByClassName("game-card").length;
+          p++
+        ) {
+          document
+            .getElementsByClassName("game-card")
+          [p].setAttribute("already_pressed", "true");
         }
-      });
+        showResult(this);
+      }
+    });
   }
 
   document.querySelector(".custom-select-wrapper") &&
     document
       .querySelector(".custom-select-wrapper")
-      .addEventListener("click", function() {
+      .addEventListener("click", function () {
         this.querySelector(".custom-select").classList.toggle("open");
       });
 
-  window.addEventListener("click", function(e) {
-    const select = document.querySelector(".custom-select");
-    if (select && !select.contains(e.target)) {
-      select.classList.remove("open");
-    }
-  });
+  document.querySelector('.custom-select') &&
+    window.addEventListener("click", function (e) {
+      const select = document.querySelector(".custom-select");
+      if (select && !select.contains(e.target)) {
+        select.classList.remove("open");
+      }
+    });
 
   for (const option of document.querySelectorAll(".custom-option")) {
-    option.addEventListener("click", function() {
+    option.addEventListener("click", function () {
       if (!this.classList.contains("selected")) {
         this.parentNode
           .querySelector(".custom-option.selected")
@@ -68,7 +69,7 @@ function showCounter(querySelector, currentValue, maxValue) {
     timeout =
       2000 / maxValue + ((currentValue / maxValue) * 15 * maxValue) / 100;
 
-    setTimeout(function() {
+    setTimeout(function () {
       showCounter(querySelector, currentValue, maxValue);
     }, timeout);
   }
@@ -94,7 +95,7 @@ function showResult(gameCardElement) {
   for (let index = 0; index < elements.length; index++) {
     elements[index].classList.toggle("slide-name2");
   }
-  
+
   var elements = document.getElementsByClassName("count-background");
   for (let index = 0; index < elements.length; index++) {
     elements[index].classList.toggle("slide-background");
